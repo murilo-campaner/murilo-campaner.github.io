@@ -74,6 +74,7 @@
 
     fetch("https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send", {
       method: "POST",
+      mode: 'no-cors',
       headers: {
         "content-type": "application/json",
         "x-rapidapi-host": "rapidprod-sendgrid-v1.p.rapidapi.com",
