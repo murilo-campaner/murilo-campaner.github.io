@@ -42,15 +42,21 @@
   };
 
   const getTodayLoggedRequests = () => {
-    const requests = JSON.parse(sessionStorage.getItem("email-requests"));
-    const filteredRequests = requests.filter((request) => {
-      const yesterdayFromNow = new Date(
-        new Date().setDate(new Date().getDate() - 1)
-      ).getTime();
-      return request.time > yesterdayFromNow;
-    });
-
-    return filteredRequests;
+    try {
+      const requests = JSON.parse(sessionStorage.getItem("email-requests")) || [];
+      
+      const filteredRequests = requests.filter((request) => {
+        const yesterdayFromNow = new Date(
+          new Date().setDate(new Date().getDate() - 1)
+        ).getTime();
+        return request.time > yesterdayFromNow;
+      });
+  
+      return filteredRequests;
+    } catch (error) {
+      return [];
+    }
+    
   };
 
   const logRequest = (payload) => {
