@@ -77,7 +77,7 @@
       credentials: 'include',
       headers: {
         "content-type": "application/json",
-        "x-rapidapi-host": "rapidprod-sendgrid-v1.p.rapidapi.com",
+        "x-rapidapi-host": "murilo-campaner.github.io",
         "x-rapidapi-key": FREE_API_KEY,
       },
       body: JSON.stringify({
