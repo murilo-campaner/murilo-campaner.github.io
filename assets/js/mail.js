@@ -71,6 +71,11 @@
     event.stopPropagation();
     event.preventDefault();
 
+    if (getTodayLoggedRequests().length > 2) {
+      errorAlert();
+      return;
+    }
+
     const senderName = document.querySelector(".email-form #name").value;
     const senderEmail = document.querySelector(".email-form #email").value;
     const senderMessage = document.querySelector(".email-form #message").value;
@@ -83,7 +88,7 @@
       headers: {
         "content-type": "application/json",
         "x-rapidapi-host": "rapidprod-sendgrid-v1.p.rapidapi.com",
-        "x-rapidapi-key": "a1a07aa797mshdd17b141ff406b6p11c4a5jsna639c0994f82",
+        "x-rapidapi-key": FREE_API_KEY,
       },
       processData: false,
       data: {
@@ -106,49 +111,13 @@
     };
 
     $.ajax(settings).done(function (response) {
-      console.log(response);
-    });
-
-    fetch("https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send", {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        "content-type": "application/json",
-        "x-rapidapi-host": "rapidprod-sendgrid-v1.p.rapidapi.com",
-        "x-rapidapi-key": FREE_API_KEY,
-      },
-      body: JSON.stringify({
-        personalizations: [
-          {
-            to: [{ email: "contato@campaner.dev" }],
-            subject: `Murilo Porfólio - Contact from ${senderName}`,
-          },
-        ],
-        from: {
-          email: senderEmail,
-        },
-        content: [
-          {
-            type: "text/plain",
-            value: `${senderMessage}`,
-          },
-        ],
-      }),
-    })
-      .then((response) => {
-        if (getTodayLoggedRequests().length > 2) {
-          throw new Error("Invalid request");
-        }
-        logRequest({
-          name: form.name.value,
-          email: form.email.value,
-          message: form.message.value,
-        });
-        successAlert();
-        cleanForm();
-      })
-      .catch((err) => {
-        errorAlert();
+      logRequest({
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value,
       });
+      successAlert();
+      cleanForm();
+    });
   });
 })();
