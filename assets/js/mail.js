@@ -118,6 +118,9 @@
       });
       successAlert();
       cleanForm();
+    })
+    .fail(function(xhr, status, error) {
+      errorAlert();
     });
   });
 })();
