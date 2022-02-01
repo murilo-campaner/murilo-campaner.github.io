@@ -4039,3 +4039,22 @@ a.text-content {
   color: #f1f1f1;
   text-decoration: dashed;
 }
+
+.swal-text {
+  font-weight: bold;
+}
+
+.swal-content-text p {
+  text-align: left;
+  color: rgba(0,0,0,.54);
+}
+
+.swal-button-container {
+  text-align: center;
+}
+
+.swal-button {
+  padding: 0 4rem;
+  font-size: 12px;
+  background-color: #5e42a6;
+}
