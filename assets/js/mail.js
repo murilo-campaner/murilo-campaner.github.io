@@ -1,5 +1,4 @@
 (function () {
-  const form = document.querySelector(".email-form");
   // Before trying to hjack this api key, know that it's an free key =)
   // You can get one here: https://rapidapi.com/sendgrid/api/sendgrid/
   const FREE_API_KEY = "a1a07aa797mshdd17b141ff406b6p11c4a5jsna639c0994f82";
@@ -36,11 +35,6 @@
       icon: "error",
     });
 
-  const cleanForm = () => {
-    const inputs = document.querySelectorAll(".email-form input");
-    inputs.forEach((input) => (input.value = ""));
-  };
-
   const getTodayLoggedRequests = () => {
     try {
       const requests = JSON.parse(sessionStorage.getItem("email-requests")) || [];
@@ -74,59 +68,37 @@
   };
 
   $("form").on("click", ".submit", function (event) {
-    event.stopPropagation();
+    const form = $(this);
     event.preventDefault();
 
     if (getTodayLoggedRequests().length > 2) {
       errorAlert();
       return;
     }
+    
+    const data = new FormData(event.target);
 
-    const senderName = document.querySelector(".email-form #name").value;
-    const senderEmail = document.querySelector(".email-form #email").value;
-    const senderMessage = document.querySelector(".email-form #message").value;
-
-    const settings = {
-      async: true,
-      crossDomain: true,
-      url: "https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send",
-      method: "POST",
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
       headers: {
-        'Access-Control-Allow-Origin': '*',
-        "content-type": "application/json",
-        "x-rapidapi-host": "rapidprod-sendgrid-v1.p.rapidapi.com",
-        "x-rapidapi-key": FREE_API_KEY,
-      },
-      processData: false,
-      data: {
-        personalizations: [
-          {
-            to: [{ email: "contato@campaner.dev" }],
-            subject: `Murilo Porfólio - Contact from ${senderName}`,
-          },
-        ],
-        from: {
-          email: senderEmail,
-        },
-        content: [
-          {
-            type: "text/plain",
-            value: `${senderMessage}`,
-          },
-        ],
-      },
-    };
-
-    $.ajax(settings).done(function (response) {
+          'Accept': 'application/json'
+      }
+    })
+    .then(function (response) {
+      if (!response.ok) {
+        throw new Error('Invalid submission');
+      }
+      successAlert();
       logRequest({
         name: form.name.value,
         email: form.email.value,
         message: form.message.value,
       });
-      successAlert();
-      cleanForm();
+
+      form.reset();
     })
-    .fail(function(xhr, status, error) {
+    .catch(function(xhr, status, error) {
       errorAlert();
     });
   });
