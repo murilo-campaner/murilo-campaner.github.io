@@ -92,6 +92,7 @@
       url: "https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send",
       method: "POST",
       headers: {
+        'Access-Control-Allow-Origin': '*',
         "content-type": "application/json",
         "x-rapidapi-host": "rapidprod-sendgrid-v1.p.rapidapi.com",
         "x-rapidapi-key": FREE_API_KEY,
