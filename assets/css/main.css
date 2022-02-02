@@ -3571,6 +3571,13 @@ body.is-preload .wrapper.fade > .inner {
   margin-left: 18em;
 }
 
+#sidebar .footer {
+  position: absolute;
+  bottom: 1rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
 #sidebar header {
 	width: 100%;
 	text-align: center;
