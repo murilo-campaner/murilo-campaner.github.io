@@ -1,7 +1,7 @@
 # Hey, I am Murilo! Great to see you here! <img src="./images/wave.gif" width="30px">
 
 <img src="./images/readme-banner.jpg">
-<br /><br />
+<br />
 
 Software engineer by profession and passion, 29 years old, Brazilian, graduated as a Bachelor of Information Systems, married to a wonderful wife and father of two princesses, Lara and Margot (our four-legged daughter).
 
@@ -37,7 +37,7 @@ During this period, I have always participated in all projects, programming with
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-<br /><br />
+<br />
 
 ### Frameworks & Libraries
 ![React](https://img.shields.io/badge/React.js%20&%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -54,20 +54,20 @@ During this period, I have always participated in all projects, programming with
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![ZendFramework](https://img.shields.io/badge/Zend_Framework-68B604?style=for-the-badge&logo=zendframework&logoColor=white)
 ![GraphQL](https://img.shields.io/badge/Graphql-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-<br /><br />
+<br />
 
 ### Databases
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-<br /><br />
+<br />
 
 ### Infrastructure & CI/CD
 ![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![CircleCI](https://img.shields.io/badge/Circle_CI-343434?style=for-the-badge&logo=circleci&logoColor=white)
 ![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white)
-<br /><br />
+<br />
 
 ### Tools & Platform
 ![OSX](https://img.shields.io/badge/MacOS-FFF?style=for-the-badge&logo=apple&logoColor=black)
@@ -79,7 +79,7 @@ During this period, I have always participated in all projects, programming with
 ![Gitkraken](https://img.shields.io/badge/Gitkraken-179287?style=for-the-badge&logo=gitkraken&logoColor=white)
 ![Datagrip](https://img.shields.io/badge/datagrip-000000?style=for-the-badge&logo=datagrip&logoColor=white)
 ![Postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-<br /><br />
+<br />
 
 ## 📈 Stats
 <br />
