@@ -172,5 +172,23 @@
 
 				}
 			});
+		
+
+			/** Tooltips */
+			$('.tooltip.image').each(function() {
+				const element = $(this);
+				const imageSrc = $(this).attr('data-image');
+				const height = $(this).attr('data-height') || 250;
+				
+				var img = new Image();
+				img.height = height;
+				img.src = imageSrc;
+
+				element.tooltipster({
+					content: img,
+					theme: 'tooltipster-shadow',
+					delay: 0,
+				})
+			})
 
 })(jQuery);

@@ -4021,7 +4021,7 @@ body.is-preload #sidebar nav ul li {
 }
 
 #intro p {
-  font-size: 1.25em;
+  font-size: 1.15em;
 }
 
 @media screen and (max-width: 980px) {
@@ -4064,4 +4064,37 @@ a.text-content {
   padding: 0 4rem;
   font-size: 12px;
   background-color: #5e42a6;
+}
+
+.skills-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.skills-list li {
+  display: inline;
+  color: #FFF;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0 2rem 0 0;
+}
+
+.skills-list .muted {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  text-align: center;
+}
+
+.tooltip {
+  text-decoration: 1px dotted;
+  text-underline-offset: 4px;
+  text-decoration-line: underline;
+  cursor: context-menu;
+}
+
+.tooltipster-content img {
+  object-fit: contain;
 }

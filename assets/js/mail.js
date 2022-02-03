@@ -3,13 +3,10 @@
   // You can get one here: https://rapidapi.com/sendgrid/api/sendgrid/
   const FREE_API_KEY = "a1a07aa797mshdd17b141ff406b6p11c4a5jsna639c0994f82";
 
-  const successAlert = () => {
+  const successAlert = (message) => {
     const content = document.createElement("div");
     content.className = 'swal-content-text'
-    content.innerHTML = `
-      <p>Your message was successfully delivered and I will answer as soon as possible (I usually take a maximum of 2 days).</p>
-      <p>If it is an urgent matter, feel free to send me a message on <a style="color: #0a66c2;" href="https://www.linkedin.com/in/murilo-campaner" target="_blank" rel="noopener">Linkedin</a>.</p>
-    `;
+    content.innerHTML = message;
     
     swal({
       text: "Thank you for your interest!",
@@ -18,13 +15,10 @@
     });
   }
 
-  const errorAlert = () => {
+  const errorAlert = (message) => {
     const content = document.createElement("div")
     content.className = 'swal-content-text'
-    content.innerHTML = `
-      <p>Sorry, I'm already notified about this problem and I will fix it soon!</p>
-      <p>Please, feel free to send me a message on my <a style="color: #0a66c2;" href="https://www.linkedin.com/in/murilo-campaner" target="_blank" rel="noopener">Linkedin</a> while this problem is not fixed.</p>
-    `;
+    content.innerHTML = message
 
     swal({
       text: "Your message could not be delivered",
@@ -51,6 +45,14 @@
     }
   };
 
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
   const logRequest = (payload) => {
     const previousRequests = getTodayLoggedRequests();
     sessionStorage.setItem(
@@ -70,11 +72,27 @@
     event.preventDefault();
 
     if (getTodayLoggedRequests().length > 2) {
-      errorAlert();
+      errorAlert(`
+        <p>Please, feel free to send me a message on my <a style="color: #0a66c2;" href="https://www.linkedin.com/in/murilo-campaner" target="_blank" rel="noopener">Linkedin</a> while this problem is not fixed.</p>
+      `);
       return;
     }
 
     const data = new FormData(event.target);
+    console.log(data.get('name'));
+
+    if (!data.get('name')) {
+      errorAlert(`<p style="text-align: center;">Please, inform your name.</p>`);
+      return;
+    } else if (!validateEmail(data.get('email'))) {
+      errorAlert(`<p style="text-align: center;">Please, inform a valid e-mail address.</p>`);
+      return;
+    } else if (!data.get('message')) {
+      errorAlert(`<p style="text-align: center;">Please, write a message.</p>`);
+      return;
+    }
+
+
     fetch(event.target.action, {
       method: form.method,
       body: data,
@@ -87,7 +105,11 @@
           throw new Error("Invalid submission");
         }
 
-        successAlert();
+        successAlert(`
+          <p>Your message was successfully delivered and I will answer as soon as possible (I usually take a maximum of 2 days).</p>
+          <p>If it is an urgent matter, feel free to send me a message on <a style="color: #0a66c2;" href="https://www.linkedin.com/in/murilo-campaner" target="_blank" rel="noopener">Linkedin</a>.</p>
+        `);
+
         logRequest({
           name: form.name.value,
           email: form.email.value,
@@ -98,7 +120,10 @@
       })
       .catch(function (error) {
         console.log(error.message);
-        errorAlert();
+        errorAlert(`
+          <p>Sorry, I'm already notified about this problem and I will fix it soon!</p>
+          <p>Please, feel free to send me a message on my <a style="color: #0a66c2;" href="https://www.linkedin.com/in/murilo-campaner" target="_blank" rel="noopener">Linkedin</a> while this problem is not fixed.</p>
+        `);
       });
   });
 })();

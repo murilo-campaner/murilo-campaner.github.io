@@ -5,8 +5,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/tooltipster.bundle.min.css" />
+		<link rel="stylesheet" href="assets/css/tooltipster-sideTip-shadow.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
 		<link rel="manifest" href="./assets/site.webmanifest.json">
 		
 		<!-- Favicons - Generic -->
@@ -58,9 +59,9 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Who is Murilo...</h1>
-							<p>Software engineer by profession and passion, 29 years old, Brazilian, graduated as a Bachelor of Information Systems, married to a wonderful wife and father of two princesses, Lara and Margot (our four-legged daughter)</p>
-							<p>I program since I was 15 year old (professionally). At 21, I founded a Software Development company. There, I had the opportunity to work on projects from many areas and lead an excellent team of developers, serving from small businesses to some multinational giants like <a href="#philips" class="nav-link text-content">Philips</a>, <a href="#klabin" class="nav-link text-content">Klabin</a> and <a href="#rosacruz" class="nav-link text-content">Rosacrucian Order</a></p>	
-							<p>During this period, I have always participated in all projects, programming with the team and helping with technical issues. After my daughter birth, I decided that I wanted to get back to programming at full-time, staying closer of my family. So, I leaved my company and accepted the proposal to take over the position of Senior Software Engineer at <a href="#luxury" class="nav-link text-content">Luxury Presence</a>, a North American real estate company, where I currently work.</p>
+							<p>Software engineer by profession and passion, 29 years old, Brazilian, graduated as a <span class="tooltip image underline" data-image="./images/tooltips/formatura.jpg">Bachelor of Information Systems</span>, married to a <span class="tooltip image underline" data-image="./images/tooltips/wife.jpg">wonderful wife</span> and father of two princesses, <span class="tooltip image underline" data-image="./images/tooltips/larinha.jpg">Lara</span> and <span class="tooltip image underline" data-image="./images/tooltips/margot.jpg">Margot</span> (our four-legged daughter).</p>
+							<p>I program professionally since I was 17 years old. At 21, I founded a <span class="tooltip image underline" data-image="./images/tooltips/logo-inovad.png" data-height="100">software development company</span> where I had the opportunity to work on projects from many areas and lead an <span class="tooltip image underline" data-image="./images/tooltips/dev-team.jpg">excellent team of developers</span>, serving from small businesses to some multinational giants like <a href="#philips" class="nav-link text-content">Philips</a>, <a href="#klabin" class="nav-link text-content">Klabin</a> and <a href="#rosacruz" class="nav-link text-content">Rosicrucian Order</a>.</p>	
+							<p>During this period, I have always participated in all projects, programming with the team and helping with technical issues. After <span class="tooltip image underline" data-image="./images/tooltips/daughter.jpg">my daughter birth</span>, I decided that I wanted to get back to programming full-time, staying closer to my family. So, I left my company and accepted the proposal to take over the position of Sr. Software Engineer at <a href="#luxury" class="nav-link text-content">Luxury Presence</a>, a North American real estate company, where <span class="tooltip image underline" data-image="./images/tooltips/data-team.png">I currently work</span>.</p>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>
@@ -74,34 +75,60 @@
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="features">
 								<section>
-									<span class="icon brands solid major fa-react"></span>
-									<h3>React.js <small>(JS & Native)</small></h3>
+									<span class="icon brands major fa-react"></span>
+									<h3>React <small>(React.js & React Native)</small></h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<!-- <ul class="skills-list">
+										<li><span class="muted">React.js</span><br />6 years</li>
+										<li><span class="muted">React Native</span><br />5 years</li>
+									</ul> -->
 								</section>
 								<section>
-									<span class="icon brands solid major fa-node"></span>
-									<h3>Node.js <small>(Nest.js, Express.js & Adonis.js)</small></h3>
+									<span class="icon brands major fa-node"></span>
+									<h3>Node.js <small>(Adonis.js, Nest.js, Express.js)</small></h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<!-- <ul class="skills-list">
+										<li><span class="muted">Adonis.js</span><br />6 years</li>
+										<li><span class="muted">Nest.js</span><br />1 year</li>
+										<li><span class="muted">Express.js</span><br />2 years</li> -->
+									<!-- </ul> -->
 								</section>
 								<section>
-									<span class="icon solid major typescript"></span>
+									<span class="icon major typescript"></span>
 									<h3>Typescript</h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<!-- <ul class="skills-list">
+										<li><span class="muted">Experience</span><br />3 years</li>
+									</ul> -->
 								</section>
 								<section>
-									<span class="icon brands solid major fa-php"></span>
+									<span class="icon brands major fa-php"></span>
 									<h3>PHP <small>(Laravel & Zend Framework)</small></h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<!-- <ul class="skills-list">
+										<li><span class="muted">Laravel</span><br />6 years</li>
+										<li><span class="muted">Zend Framework</span><br />3 years</li>
+									</ul> -->
 								</section>
 								<section>
 									<span class="icon solid major fa-database"></span>
 									<h3>Databases <small>(MySQL, Postgres, MongoDB)</small></h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<!-- <ul class="skills-list">
+										<li><span class="muted">Postgres/Mysql</span><br />12 years</li>
+										<li><span class="muted">MongoDB</span><br />4 years</li>
+									</ul> -->
 								</section>
 								<section>
-									<span class="icon brands solid major fa-git"></span>
-									<h3>CI/CD <small>(Docker, Git Pipelines, CircleCI)</small></h3>
+									<span class="icon major brands fa-docker"></span>
+									<h3>CI/CD <small>(Docker, Git Pipelines, CircleCI, AWS)</small></h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<!-- <ul class="skills-list">
+										<li><span class="muted">Docker</span><br />6 years</li>
+										<li><span class="muted">Pipelines</span><br />2 years</li>
+										<li><span class="muted">CircleCI</span><br />1 year</li> -->
+										<!-- <li><span class="muted">AWS</span><br />5 years</li> -->
+									<!-- </ul> -->
 								</section>
 							</div>
 							<ul class="actions">
@@ -154,7 +181,7 @@
 							<a href="https://www.amorc.org.br/" target="_blank" rel="noopener" class="image logo big"><img src="images/logo-amorc.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Rosacrucian Order</h2>
+									<h2>Rosicrucian Order</h2>
 									<p>Founded in 1915 the Rosicrucian Order, AMORC is the largest international organization dedicated to perpetuating the ancient Rosicrucian Tradition with hundreds of locations throughout the world and more than 80,000 members benefiting from the expanded awareness that comes through the Rosicrucian teachings and practices.</p>
 									<ul class="actions">
 										<!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
@@ -203,7 +230,7 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Meu Estar</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<p>Public parking application of the city of Curitiba, used daily by more than 30.000 users developed in React Native and Expo</p>
 									<ul class="actions">
 										<!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
 									</ul>
@@ -253,7 +280,7 @@
 										</li>
 										<li>
 											<h3>Resume (CV)</h3>
-											<a href="#">Download</a>
+											<a href="#">Download PDF</a>
 										</li>
 										<li>
 											<h3>Social</h3>
@@ -277,6 +304,7 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/tooltipster.bundle.min.js"></script>
 			<script src="assets/js/sweetalert.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
