@@ -2093,11 +2093,11 @@ button:hover:active:after,
   border-radius: 0.25em;
   border: solid 1px rgba(255, 255, 255, 0.15);
   background: rgba(255, 255, 255, 0.05);
-  margin: 0 0 2em 0;
+  margin: 0 0 0 0;
 }
 
 .features section {
-  padding: 3.5em 3em 1em 7em;
+  padding: 1.5em 3em 1em 7em;
   width: 50%;
   border-top: solid 1px rgba(255, 255, 255, 0.15);
   position: relative;
@@ -2126,7 +2126,7 @@ button:hover:active:after,
   transform: scale(1);
   position: absolute;
   left: 3em;
-  top: 3em;
+  top: 1em;
   opacity: 1;
 }
 
@@ -4088,7 +4088,7 @@ a.text-content {
   text-align: center;
 }
 
-.tooltip {
+.tooltip, .tooltip-text {
   text-decoration: 1px dotted;
   text-underline-offset: 4px;
   text-decoration-line: underline;
@@ -4097,4 +4097,8 @@ a.text-content {
 
 .tooltipster-content img {
   object-fit: contain;
+}
+.tooltipster-content {
+  font-size: 1rem;
+  
 }

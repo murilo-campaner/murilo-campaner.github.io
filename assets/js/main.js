@@ -173,6 +173,14 @@
 				}
 			});
 		
+			$('.tooltip-text').each(function() {
+				const element = $(this);
+				element.tooltipster({
+					content: element.attr('title'),
+					theme: 'tooltipster-shadow',
+					delay: 0,
+				})
+			})
 
 			/** Tooltips */
 			$('.tooltip.image').each(function() {
