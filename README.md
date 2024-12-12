@@ -3,8 +3,6 @@
 <img src="./images/readme-banner.jpg">
 <br />
 
-Hello, my name is Murilo.
-
 I’m a 32-year-old Brazilian who splits his time between programming, being a father, a husband, and taking my jet ski out to feel the wind on my face (and, occasionally, taste a few bugs along the way). I hold a degree in Information Systems, I’m married to the most amazing partner I could ask for, and I’m the proud father of two treasures: Lara, my spirited 7-year-old daughter who keeps me on my toes, and Lucas, my 9-month-old explorer who’s already perfected the art of turning any room into chaos. Oh, and let’s not forget Margot, our little dog who acts like she’s the CEO of the house.
 
 My passion for programming started at 17, and by 21, I had already founded my own software development company. Over the years, I had the privilege of working on projects for clients of all sizes and industries—ranging from local businesses to global giants like Philips, Klabin, and the Rosicrucian Order. Leading a phenomenal team was rewarding, but I always made it a point to stay hands-on, coding alongside the team and tackling the toughest challenges head-on.
@@ -16,9 +14,9 @@ Nearly a year later, an incredible opportunity came my way: a role at Uber. It w
 <br />
 
 <p align="center">
-    Find out more about me & feel free to connect with me here:
+    Find out more about my work in my Website/LinkedIn and feel free to drop me a message or schedule a meeting
     <br /><br />
-  <a href="https://murilo-campaner.github.io/">
+	<a href="https://murilo-campaner.github.io/">
 		<img src="https://img.shields.io/badge/website-FFF?style=for-the-badge&logo=devdotto&logoColor=black" />
 	</a>
 	<a href="https://www.linkedin.com/in/murilo-campaner/">
@@ -27,15 +25,12 @@ Nearly a year later, an incredible opportunity came my way: a role at Uber. It w
   <a href="mailto:contato@campaner.dev">
 		<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 	</a>
-  <a href="https://calendly.com/murilo-campaner/lets-talk">
+	<a href="https://calendly.com/murilo-campaner/lets-talk">
 		<img src="https://img.shields.io/badge/Calendly-0069ff?style=for-the-badge&logo=google-calendar&logoColor=white" />
 	</a>
 </p>
 
 ---
-
-![Murilo's GitHub activity graph](https://activity-graph.herokuapp.com/graph?username=murilo-campaner&hide_border=true&theme=react-dark)
-
 
 ## ‍💻 Tech Stack
 
@@ -88,14 +83,3 @@ Nearly a year later, an incredible opportunity came my way: a role at Uber. It w
 ![Datagrip](https://img.shields.io/badge/datagrip-000000?style=for-the-badge&logo=datagrip&logoColor=white)
 ![Postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 <br />
-
-## 📈 Stats
-<br />
-<p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=murilo-campaner&show_icons=true&hide_border=true&theme=radical" />
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=murilo-campaner&hide_border=true&theme=radical" />
-</p>
-
-<p align="center">
-   <img src="https://raw.githubusercontent.com/Asmit2952/Asmit2952/5aefb6ee1a4cc53dc4bc5e35aef74b4444e545df/github-contribution-grid-snake.svg" alt="snake">
-</p>
