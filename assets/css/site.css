@@ -89,7 +89,7 @@ p { margin: 0; }
   align-items: center;
 }
 .hero__id { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.75rem; }
-.avatar { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; filter: grayscale(1); }
+.avatar { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; }
 .hero__meta { color: var(--slate); font-size: var(--step--1); line-height: 1.5; }
 .hero__meta::first-line { color: var(--ink); font-weight: 600; }
 
