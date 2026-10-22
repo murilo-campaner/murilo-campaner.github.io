@@ -1,6 +1,6 @@
 {
-  "name": "Murilo Campaner - Senior Fullstack Software Engineer | Resume, experience and portfolio",
-  "short_name": "Murilo Campaner - Software Engineer",
+  "name": "Murilo Campaner, Senior Full-Stack Engineer",
+  "short_name": "Murilo Campaner",
   "icons": [
     {
       "src": "./favicon/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#eef1f4",
+  "background_color": "#eef1f4",
   "display": "standalone"
 }
